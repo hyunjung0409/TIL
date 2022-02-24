@@ -1,0 +1,56 @@
+.App {
+  text-align: center;
+}
+
+.navbar {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  color: white;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.list {
+  text-align: left;
+  margin-top: 10px;
+  padding: 0 20px 0 20px;
+}
+
+.list button {
+  margin: 0 5px 0 10px;
+}
+
+.modal {
+  margin: 20px 0 20px 0;
+  padding: 20px;
+  background: lightgrey;
+}
+
+.publish {
+  margin: 30px 0 30px 0;
+}
+
+.publish input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 90%;
+  border: 1px solid grey;
+}
+
+.publish button {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
