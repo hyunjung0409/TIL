@@ -1,0 +1,48 @@
+@import './reset.scss';
+
+//변수에 데이터를 저장해서 사용 가능 ( $변수명: 변수에 넣을 값 )
+$메인칼라: #ff0000;
+
+.red {
+  color: $메인칼라;
+}
+
+@mixin 함수() {
+  background: #eeeeee;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+}
+
+.my-alert {
+  @include 함수();
+}
+
+.my-alert-yellow {
+  @extend .my-alert;
+  background: #ffe591;
+}
+
+.my-alert p {
+  margin-bottom: 0;
+}
+
+// div.container h4 {
+//   color: blue;
+// }
+
+// div.container p {
+//   color: green;
+// }
+
+//셀럭터 대신 쓰는 nesting
+// div.container {
+//   h4 {
+//     color: blue;
+//   }
+//   p {
+//     color: green;
+//   }
+// }
